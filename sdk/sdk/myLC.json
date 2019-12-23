@@ -1,0 +1,1 @@
+{"rule": [{"action": {"storageClass": "NEARLINE", "type": "SetStorageClass"}, "condition": {"age": 30}}]}
