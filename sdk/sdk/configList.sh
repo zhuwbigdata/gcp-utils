@@ -1,2 +1,2 @@
 #!/bin/bash
-gcloud config list
+gcloud config list 
