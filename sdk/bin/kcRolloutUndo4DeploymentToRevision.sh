@@ -3,9 +3,9 @@ check_usage() {
   if [ $# -lt 2 ];
   then
     echo "Usage:"
-    echo "$0 <POD_NAME> <LABEL>"
+    echo "$0 <DEPLOYMENT_NAME> <REVISION_NUMBER>"
     exit 1
   fi
 }
 check_usage $*
-kubectl describe pod $1 --label=$2
+kubectl rollout undo deployments $1 --to-revision=$2

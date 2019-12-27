@@ -1,2 +1,2 @@
 #!/bin/bash
-kubectl get services
+kubectl get services -o wide

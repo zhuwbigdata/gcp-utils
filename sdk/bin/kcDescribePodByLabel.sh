@@ -3,9 +3,9 @@ check_usage() {
   if [ $# -lt 2 ];
   then
     echo "Usage:"
-    echo "$0 <POD_NAME> <SELECTOR>"
+    echo "$0 <POD_NAME> <LABEL>"
     exit 1
   fi
 }
 check_usage $*
-kubectl describe pod $1 --selector=$2
+kubectl describe pod $1 -l $2
