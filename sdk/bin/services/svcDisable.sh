@@ -8,5 +8,4 @@ check_usage() {
   fi
 }
 check_usage $*
-gcloud services disable  $1
-
+gcloud services disable  $1 --force
