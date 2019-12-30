@@ -4,9 +4,9 @@ check_usage() {
   then
     echo "Usage:"
     echo "$0 <FILE_PATH>"
-    echo "This is in_place update, not disruptive update - declarative"
+    echo "This is disruptive update, not in-place update - declarative"
     exit 1
   fi
 }
 check_usage $*
-kubectl apply -f $1
+kubectl replace -f $1
