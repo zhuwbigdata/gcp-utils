@@ -8,4 +8,4 @@ check_usage() {
   fi
 }
 check_usage $*
-gcloud compute networks subnets list --network=$1
+gcloud compute networks subnets list --filter=$1

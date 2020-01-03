@@ -12,4 +12,5 @@ gcloud compute instances create $1 \
     --network=$2 --machine-type=$3 \
     --image-family=$5 --image-project=$4 \
     --subnet=$6 --zone=$7 \
+    --private-network-ip=$8 \
     --no-address 
