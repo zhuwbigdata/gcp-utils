@@ -3,9 +3,9 @@ check_usage() {
   if [ $# -lt 2 ];
   then
     echo "Usage:"
-    echo "$0 <Lifecycle_Json> <BUCKET_URL>"
+    echo "$0 <PERMISION, e.g. AllUers:R> <BUCKET_FILE>"
     exit 1
   fi
 }
 check_usage $*
-gsutil lifecycle set $1 $2  
+gsutil acl ch -u $1 $2
