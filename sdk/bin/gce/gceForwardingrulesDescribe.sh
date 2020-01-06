@@ -1,6 +1,6 @@
 #!/bin/bash
 check_usage() {
-  if [ $# -lt 1 ];
+  if [ $# -lt 2 ];
   then
     echo "Usage:"
     echo "$0 <Forwarding_rule_name> <Region>"
