@@ -8,4 +8,4 @@ check_usage() {
   fi
 }
 check_usage $*
-gcloud compute disks snapshot=$1 --region=$2
+gcloud compute disks snapshot $1 --region=$2
