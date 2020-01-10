@@ -8,4 +8,4 @@ check_usage() {
   fi
 }
 check_usage $*
-gcloud app versions migrate  $1 -s $2
+gcloud app versions migrate  $1 --service=$2

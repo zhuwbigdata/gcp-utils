@@ -1,1 +1,15 @@
-README for App Engine 
+README for App Engine
+Quota: one app engine per project
+       multiple services per app engine
+
+Create App Engine for a project
+$ gcloud app create --region=$1
+
+Deploy a service in App Engine
+$ gcloud app deploy *.yaml
+
+Tail logs on a service
+gcloud app logs tail -s $1
+
+Split the traffic
+$ gcloud app services set-traffic $1 --splits $2
