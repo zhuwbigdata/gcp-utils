@@ -1,3 +1,4 @@
 README
 GKE clusters can be created at either Zone level or Region level.
 Network policy can be enabled to control the traffic btw pods and services.
+There can be multiple node-pools in a cluster.
