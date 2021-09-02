@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pandarallel
+Version: 1.5.2
+Summary: An easy to use library to speed up computation (by parallelizing on multi CPUs) with pandas.
+Home-page: https://github.com/nalepae/pandarallel
+Author: Manu NALEPA
+Author-email: nalepae@gmail.com
+License: BSD
+Description: See https://github.com/nalepae/pandarallel/tree/v1.5.2 for complete user guide.
+Platform: UNKNOWN
+Requires-Python: >=3.5
